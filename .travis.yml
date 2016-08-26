@@ -7,7 +7,6 @@ before_install:
 - sudo apt-get install -y asciidoctor
 
 script:
-- sudo bundle install
 - bundle exec rake book:build
 
 deploy:
