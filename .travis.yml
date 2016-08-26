@@ -1,22 +1,14 @@
 os: linux
 dist: trusty
 sudo: required
+language: ruby
 
 before_install:
-- sudo apt-get install -y pandoc rubber
-- sudo apt-get install -y texlive-fonts-recommended texlive-fonts-extra
-- sudo apt-get install -y texlive-latex-recommended texlive-latex-extra
-- sudo apt-get install -y texlive-science texlive-pictures
-- sudo apt-get install -y texlive-xetex
+- sudo apt-get install -y asciidoctor
 
 script:
-- sed -i 's|^\[\!\[.*||g' README.md
-- pandoc -s --from=markdown --to=latex -V geometry:letterpaper,margin=1in -o README.tex README.md
-- rubber --pdf README.tex
-- pandoc -s --from=markdown --to=latex -V geometry:letterpaper,margin=1in -o LICENSE.tex LICENSE.md
-- rubber --pdf LICENSE.tex
-- pandoc README.md -o README.epub
-- pandoc LICENSE.md -o LICENSE.epub
+- sudo bundle install
+- bundle exec rake book:build
 
 deploy:
   provider: releases
