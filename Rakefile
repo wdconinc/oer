@@ -11,19 +11,15 @@ namespace :book do
   desc 'build basic book formats'
   task :build => :prebuild do
     puts "Converting to HTML..."
-    `bundle exec asciidoctor -D build oer.asc`
+    `bundle exec pandoc book/*.md book/*/*.md -t html -o build/oer.html`
     puts " -- HTML output at build/oer.html"
 
     puts "Converting to EPub..."
-    `bundle exec asciidoctor-epub3 -D build oer.asc`
+    `bundle exec pandoc book/*.md book/*/*.md -t epub3 -o build/oer.epub`
     puts " -- Epub output at build/oer.epub"
 
-    puts "Converting to Mobi (kf8)..."
-    `bundle exec asciidoctor-epub3 -D build -a ebook-format=kf8 oer.asc`
-    puts " -- Mobi output at build/oer.mobi"
-
     puts "Converting to PDF... (this one takes a while)"
-    `bundle exec asciidoctor-pdf -D build oer.asc 2>/dev/null`
+    `bundle exec pandoc book/*.md book/*/*.md --latex-engine=xelatex -t latex -o build/oer.pdf`
     puts " -- PDF  output at build/oer.pdf"
   end
 end
