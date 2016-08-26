@@ -14,8 +14,8 @@ deploy:
   api_key:
     secure: K2YpsvXzxtlDBPjNufalkrKvHDT420pPtRzcm3kSOyHjq8ATZ2XLR9UaZlfjLNFOSaDw3SIweE3ej9mdht0aeeYQivE4jdjboZDD7CFL5+uQxQz5j7xAiRs5G/OBkF6a0e7bxqgMMv1A6JZsSuHL7UAvdLp4DPDviXPaJi3/S5oSChAgZQ6LIRT8yN76WLVcrqPVwaJQHQFXt9AnjlgHuxrz2Nhq53iVo1CT6U8FYJYwxgt3S2nArVdF5gvb1gX5+fhsSpw2/qB2S93MEdPlVTx+nVhytWpTIKKfUSZoGxpk0JWSdpFAKW5Y+KUzNE9LgOR+dBkjZtSZ+KnRAtVI6ohzaqPbNPUvKS9pTTc1bmuvoGAzGA5go9a0BgMBg1GcgcNR0uwjD10//lx6RBMfN7tbyKsFa4KWTFF1cp0pZReBvPiD8DbtKznag/PdpMfBpDHoyl+qAMBrguEUhvS1HyaQw0lHva7NZxqkoNuOKVwsa6t5FOe4SltEIoiIPfJO4vhou9z559c9SpCog2zAZHELPYBzR6t7sj6puAvDl0ZSO7Y9AwuJCPn7hQehPUWqwU02nOhrIw2oXFZhrvHEDW84B+F2RjjXaBNOMnQImQixyVAt3opB91p5WMmaejRWogzW81Jt1VJO1OYMrV4c37oVClLtaDa5AWHliCl6jks=
   file:
-  - README.pdf
-  - LICENSE.pdf
+  - oer.pdf
+  - oer.epub
   skip_cleanup: true
   on:
     repo: wdconinc/oer
