@@ -1,10 +1,5 @@
 # build artifacts
-oer.html
-oer.pdf
-oer.pdfmarks
-oer.epub
-oer-kf8.epub
-oer.mobi
+/build/
 /images/
 
 ## Core latex/pdflatex auxiliary files:
