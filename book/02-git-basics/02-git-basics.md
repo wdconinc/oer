@@ -14,6 +14,12 @@ To create a GitHub account, enter your email address and choose a username and p
 
 [github-join]:https://github.com/join
 
+![GitHub Join page](github-join.png)
+
 ### Collaboration on Existing GitHub Projects
 
 As an example, let's use this course.
+
+### Continuous Publishing to Other Formats
+
+Not everyone reader of your document will want to read the source documents. Instead, we hope to publish the documents in a variety of formats for a variety of devices. In this document we focus on publishing to pdf, to epub, and to html. We want the documents to be automatically available in all those formats as soon as the source documents are modified.
