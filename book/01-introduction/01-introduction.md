@@ -1,4 +1,4 @@
-# Introduction`
+# Introduction
 
 ## What are Open Educational Resources?
 
